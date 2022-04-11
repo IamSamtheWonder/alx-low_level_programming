@@ -8,27 +8,16 @@
 int main(void)
 {
 	int i;
-	int j;
+	int ch;
 
-	for (i = 0; i < 9; i++)
+	ch = 97
+	i = 0
+	while (i < 26)
 	{
-		for (j = 1; j < 10; j++)
-		{
-			if (i < j)
-			{
-				putchar(i + '0');
-				putchar(j + '0');
-				if (i == 8 && j == 9)
-				{
-					putchar (10);
-				}
-				else
-				{
-					putchar (44);
-					putchar(32);
-				}
-			}
-		}
+		putchar(ch);
+		ch++;
+		i++;
 	}
+	putchar(10);
 	return (0);
 }
